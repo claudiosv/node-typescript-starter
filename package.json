@@ -1,0 +1,26 @@
+{
+  "name": "typescript-node",
+  "version": "1.0.0",
+  "description": "A boilerplate for working with TypeScript and Nodejs. Includes linting, prettifier, jest for testing, Docker, etc.",
+  "main": "index.js",
+  "author": "Claudio Spiess",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/parser": "^1.1.0",
+    "eslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "ts-node-dev": "^1.0.0-pre.32"
+  },
+  "scripts": {
+    "env": "cross-env TZ=UTC NODE_ENV=development",
+    "debug": "tsnd --inspect --debug --transpileOnly --respawn src/app.ts",
+    "test": "node jest.js",
+    "tsc": "tsc",
+    "prod": "tsc && node ./dist/app.js",
+    "lint": "eslint --ext .tsx,.ts src/"
+  }
+}
