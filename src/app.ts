@@ -2,13 +2,16 @@ function greeter(person: string) {
   return `Hello ${person}!`;
 }
 
-const userName: string = "Node Hero";
+function main() {
+  const userName: string = "Node Hero";
 
-console.log(greeter(userName));
-for (let i: number = 0; i < 100000; i++) {
-  console.log("Test ", i);
+  console.log(greeter(userName));
+  for (let i: number = 0; i < 100000; i++) {
+    console.log("Test ", i);
+  }
 }
 
+export default greeter;
 /*
 Typescript
 Yarn

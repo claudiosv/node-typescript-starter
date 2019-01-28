@@ -11,14 +11,18 @@
     "typescript": "^3.2.4"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.18",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "jest": "^24.0.0",
+    "ts-jest": "^23.10.5",
     "ts-node-dev": "^1.0.0-pre.32"
   },
   "scripts": {
     "env": "cross-env TZ=UTC NODE_ENV=development",
     "debug": "tsnd --inspect --debug --transpileOnly --respawn src/app.ts",
-    "test": "node jest.js",
+    "test": "jest",
     "tsc": "tsc",
     "prod": "tsc && node ./dist/app.js",
     "lint": "eslint --ext .tsx,.ts src/"
