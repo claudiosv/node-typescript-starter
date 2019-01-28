@@ -1,7 +1,7 @@
 {
   "name": "typescript-node",
   "version": "1.0.0",
-  "description": "A boilerplate for working with TypeScript and Nodejs. Includes linting, prettifier, jest for testing, Docker, etc.",
+  "description": "A boilerplate for working with TypeScript and Nodejs. Includes linting, prettifier, jest for testing, Docker, CI from CircleCI etc.",
   "main": "index.js",
   "author": "Claudio Spiess",
   "license": "MIT",
